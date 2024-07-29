@@ -447,7 +447,7 @@ class AppVersion(MethodView):
             version.name = app_data['name']
             version.status = app_data['status']
             version.version = app_data['version']
-            version.updated_at = date, #date.strftime("%d-%m-%y %H:%M:%S")
+            version.updated_at = date # date.strftime("%d-%m-%y %H:%M:%S")
         else :
             version = ApplicationModel(**app_data,created_at=date)
             #version = ApplicationModel(**app_data,created_at=date.strftime("%d-%m-%y %H:%M:%S"))
