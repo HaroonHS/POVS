@@ -1,0 +1,6 @@
+EC2
+security rule
+vpc
+subnet public/private
+iGW
+Route Table

@@ -1,0 +1,17 @@
+flask
+flask-smorest
+python-dotenv
+sqlalchemy
+flask-sqlalchemy
+flask-jwt-extended
+passlib
+flask-mailman
+requests
+flask-mail
+flask-migrate
+Authlib
+gunicorn
+psycopg2
+moviepy
+Pillow==9.5.0
+ip2geotools
