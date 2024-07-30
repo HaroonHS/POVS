@@ -14,7 +14,7 @@ from models import UserModel,NotificationModel,ApplicationModel
 blp = Blueprint("notification", __name__,description="Operation on notification")
     
 @blp.route("/notification/<user_id>")
-class GetSupporter(MethodView):
+class GetNotification(MethodView):
     @jwt_required()
     #@blp.response(200,Userschema(many=True))
     def get(self,user_id):
@@ -28,7 +28,7 @@ class GetSupporter(MethodView):
    
 
 @blp.route("/add_notification")
-class AddSupporter(MethodView):
+class AddNotification(MethodView):
     @jwt_required()
     @blp.arguments(NotificationSchema)
     def post(self,noti_data):

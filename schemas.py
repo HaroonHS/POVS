@@ -113,9 +113,9 @@ class ReviewLikeSchema(Schema):
      review_id = fields.Int(required=True)
 
 class NotificationSchema(Schema):
-    user_id = fields.Int(required=True,dump_only=True)
-    title = fields.Str(required=True,dump_only=True)
-    notification = fields.Str(required=True,dump_only=True)
+    user_id = fields.Int(required=True)
+    title = fields.Str(required=True)
+    notification = fields.Str(required=True)
     id = fields.Int(dump_only=True)
     created_at = fields.DateTime(dump_only=True)
 
